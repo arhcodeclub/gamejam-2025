@@ -19,13 +19,26 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.005
 anchor_bottom = 0.008
-offset_left = 5.0
-offset_top = 4.0
-offset_right = 297.24
-offset_bottom = 54.816
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 302.24
+offset_bottom = 58.816
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_font_sizes/font_size = 32
 text = "Money: $x"
+
+[node name="remaining" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.005
+anchor_bottom = 0.008
+offset_left = 10.0
+offset_top = 48.0
+offset_right = 364.24
+offset_bottom = 98.816
+theme_override_fonts/font = ExtResource("1_dj8aq")
+theme_override_font_sizes/font_size = 32
+text = "Distance remaining: "
 
 [node name="openMenu" type="Button" parent="."]
 layout_mode = 0
