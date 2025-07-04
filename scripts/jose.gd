@@ -5,6 +5,7 @@ extends CharacterBody2D
 
 func _ready() -> void:
 	$AnimatedSprite2D.play("running")
+	$AnimatedSprite2D.scale = Vector2(3, 3)
 
 func _physics_process(_delta) -> void:
 	velocity.x = speed
