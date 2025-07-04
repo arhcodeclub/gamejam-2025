@@ -13,7 +13,8 @@ script/source = "extends Control
 var Royal: bool = false
 
 func _process(_delta: float) -> void:
-	$money.text = \"Money: $\" +  str(global.money)
+	var rounded = str((round(global.money*pow(10,2))/pow(10,2)))
+	$money.text = \"Money: $\" +  rounded
 	$remaining.text = \"Distance remaining: \" + str(1000 - global.distance) + \"m\"
 	if global.money <=200:
 		$traps/VBoxContainer/EGG.disabled = true
