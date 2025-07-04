@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dletfa8ktbbxa"]
+
+[node name="trump" type="CharacterBody2D"]
