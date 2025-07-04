@@ -429,9 +429,11 @@ volume_db = 6.0
 
 [node name="openMenu" type="Button" parent="."]
 layout_mode = 0
-offset_left = 912.0
-offset_right = 1152.0
-offset_bottom = 36.0
+offset_left = 863.0
+offset_top = 1.0
+offset_right = 1103.0
+offset_bottom = 37.0
+scale = Vector2(1.2, 1.2)
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "↓ TRAPS ↓"
@@ -439,15 +441,17 @@ script = ExtResource("2_ro3t7")
 
 [node name="traps" type="Control" parent="."]
 anchors_preset = 0
-offset_left = 912.0
-offset_top = 40.0
-offset_right = 952.0
-offset_bottom = 80.0
+offset_left = 863.0
+offset_top = 41.0
+offset_right = 903.0
+offset_bottom = 81.0
+scale = Vector2(1.2, 1.2)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="traps"]
 layout_mode = 0
+offset_top = 5.0
 offset_right = 240.0
-offset_bottom = 543.0
+offset_bottom = 548.0
 mouse_filter = 0
 
 [node name="COVID" type="Button" parent="traps/VBoxContainer"]
