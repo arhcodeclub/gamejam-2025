@@ -4,12 +4,24 @@
 [ext_resource type="Script" uid="uid://d2aginnaxwdem" path="res://scripts/one_second_timer.gd" id="2_ri620"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x6hnt"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"anger_1",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"anger_2",
+"speed": 5.0
+}]
 
 [node name="trump" type="Node2D"]
 script = ExtResource("1_x6hnt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_x6hnt")
+animation = &"anger_2"
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true

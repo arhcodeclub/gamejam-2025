@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjfmof7tn67xo"
-path="res://.godot/imported/Trump Idle Angry.png-24f67f8c25ec1d7b5a7c4cb082a8d3fc.ctex"
+uid="uid://nh334ykq2g52"
+path="res://.godot/imported/coin.png-cf209f827a32f162faacfa5c790116eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Trump Idle Angry.png"
-dest_files=["res://.godot/imported/Trump Idle Angry.png-24f67f8c25ec1d7b5a7c4cb082a8d3fc.ctex"]
+source_file="res://assets/art/coin.png"
+dest_files=["res://.godot/imported/coin.png-cf209f827a32f162faacfa5c790116eb.ctex"]
 
 [params]
 
