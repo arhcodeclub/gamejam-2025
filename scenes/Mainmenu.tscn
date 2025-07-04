@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://do64al3u2bn4y"]
+[gd_scene load_steps=5 format=3 uid="uid://bit0lxmeonjgp"]
 
 [ext_resource type="Script" uid="uid://cb1nve832b68p" path="res://mainmenu.gd" id="1"]
-[ext_resource type="Script" path="res://scripts/parallax_background.gd" id="2"]
+[ext_resource type="Script" uid="uid://cx7era4h70qw7" path="res://scripts/parallax_background.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://cr6wujc0u8rne" path="res://assets/art/Sky.png" id="3_krtfg"]
 [ext_resource type="Texture2D" uid="uid://dtu3fbo08yiut" path="res://assets/art/clouds.png" id="4_25p4b"]
 

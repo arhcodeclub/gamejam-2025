@@ -17,7 +17,7 @@ config/icon="res://assets/art/icon.svg"
 
 [display]
 
-window/size/mode=2
+window/size/mode=1
 
 [rendering]
 

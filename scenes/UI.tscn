@@ -385,10 +385,9 @@ wait_time = 3.0
 
 [node name="openMenu" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1667.0
-offset_top = 47.0
-offset_right = 1907.0
-offset_bottom = 83.0
+offset_left = 912.0
+offset_right = 1152.0
+offset_bottom = 36.0
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "↓ TRAPS ↓"
@@ -396,21 +395,15 @@ script = ExtResource("2_ro3t7")
 
 [node name="traps" type="Control" parent="."]
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="bgMenu" type="ColorRect" parent="traps"]
-offset_left = 895.0
-offset_top = 47.0
-offset_right = 1135.0
-offset_bottom = 347.0
-color = Color(0.231373, 0.231373, 0.231373, 0.521569)
+offset_left = 912.0
+offset_top = 40.0
+offset_right = 952.0
+offset_bottom = 80.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="traps"]
-offset_left = 1668.0
-offset_top = 90.0
-offset_right = 1908.0
-offset_bottom = 633.0
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 543.0
 
 [node name="EGG" type="Button" parent="traps/VBoxContainer"]
 layout_mode = 2
@@ -431,10 +424,9 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "ICE ($333)"
 
 [node name="bgMenu" type="ColorRect" parent="traps"]
-offset_left = 1668.0
-offset_top = 87.0
-offset_right = 1908.0
-offset_bottom = 387.0
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 300.0
 color = Color(0.231373, 0.231373, 0.231373, 0.521569)
 
 [connection signal="timeout" from="remaining/ShortTimer" to="remaining" method="_on_short_timer_timeout"]
