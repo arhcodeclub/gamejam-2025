@@ -10,16 +10,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="."]
+[node name="openMenu" type="Button" parent="."]
 layout_mode = 0
-offset_left = 938.0
-offset_top = 51.0
-offset_right = 1126.0
-offset_bottom = 100.0
+offset_left = 952.0
+offset_top = 11.0
+offset_right = 1135.0
+offset_bottom = 47.0
 theme_override_fonts/font = ExtResource("1_dj8aq")
-text = "ICE ($333)"
+text = "↓ TRAPS ↓"
 
-[node name="Label" type="Label" parent="."]
+[node name="money" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.005
