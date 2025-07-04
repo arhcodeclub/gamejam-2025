@@ -31,7 +31,7 @@ func _process(_delta: float) -> void:
 	if $traps/VBoxContainer/EGG.button_pressed:
 		global.money -=  200
 		$\"../../Jose\".speed = 0
-		await get_tree().create_timer(1.0).timeout
+		await get_tree().create_timer(5.0).timeout
 		$\"../../Jose\".speed = 256
 "
 
