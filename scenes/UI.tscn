@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=4 uid="uid://sbslr0lbyr0p"]
+[gd_scene load_steps=12 format=4 uid="uid://sbslr0lbyr0p"]
 
 [ext_resource type="FontFile" uid="uid://dsyfoq56seh4p" path="res://assets/fonts/Minecraftia-Regular.ttf" id="1_dj8aq"]
 [ext_resource type="Script" uid="uid://cymgmnvf412bs" path="res://scripts/remaining.gd" id="2_5en4g"]
 [ext_resource type="Script" uid="uid://bsr3gfqctdhgk" path="res://scripts/open_menu.gd" id="2_ro3t7"]
 [ext_resource type="AudioStream" uid="uid://c587r5nmx47wp" path="res://assets/sounds/Victory-Sound-Effect.ogg" id="3_ua6yw"]
+[ext_resource type="AudioStream" uid="uid://x34v0hahn17e" path="res://assets/sounds/AlarmSound.MP3" id="4_75u2n"]
 
 [sub_resource type="GDScript" id="GDScript_ro3t7"]
 script/source = "extends Control
@@ -397,6 +398,9 @@ stream = ExtResource("3_ua6yw")
 
 [node name="ShortTimer" type="Timer" parent="remaining"]
 wait_time = 5.0
+
+[node name="alarm" type="AudioStreamPlayer" parent="remaining"]
+stream = ExtResource("4_75u2n")
 
 [node name="openMenu" type="Button" parent="."]
 layout_mode = 0
