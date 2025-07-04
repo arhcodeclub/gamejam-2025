@@ -303,6 +303,7 @@ scale = Vector2(0.6, 0.6)
 position = Vector2(-400, 450)
 
 [node name="Camera2D" type="Camera2D" parent="Jose"]
+position = Vector2(400, 0)
 position_smoothing_enabled = true
 
 [node name="tilemaps" type="Node2D" parent="."]
