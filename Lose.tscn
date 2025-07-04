@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://n31ixj5hro7l" path="res://assets/art/download__4_-removebg-preview.png" id="1_mexgb"]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(579, 336)
 
 [node name="You lose" type="Sprite2D" parent="."]
-position = Vector2(47, 168)
+position = Vector2(47, 156)
 texture = ExtResource("1_mexgb")
