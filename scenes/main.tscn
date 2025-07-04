@@ -340,6 +340,12 @@ scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_jkv2x")
 autoplay = "default"
 
+[node name="light3" type="AnimatedSprite2D" parent="."]
+position = Vector2(8913, 420)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_jkv2x")
+autoplay = "default"
+
 [node name="flag" type="Sprite2D" parent="."]
 position = Vector2(-2, 448)
 scale = Vector2(2, 2)
