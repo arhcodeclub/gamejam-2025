@@ -450,6 +450,12 @@ offset_right = 240.0
 offset_bottom = 543.0
 mouse_filter = 0
 
+[node name="COVID" type="Button" parent="traps/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_dj8aq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
+text = "COVID ($160)"
+
 [node name="EGG" type="Button" parent="traps/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_dj8aq")
@@ -467,12 +473,6 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "ICE ($333)"
-
-[node name="COVID" type="Button" parent="traps/VBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("1_dj8aq")
-theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
-text = "COVID ($160)"
 
 [node name="message" type="Label" parent="."]
 visible = false
