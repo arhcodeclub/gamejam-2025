@@ -14,3 +14,4 @@ script = ExtResource("1_0wfyh")
 tile_set = SubResource("TileSet_o5qli")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
