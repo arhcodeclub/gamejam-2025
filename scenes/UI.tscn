@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://sbslr0lbyr0p"]
+[gd_scene load_steps=4 format=3 uid="uid://sbslr0lbyr0p"]
 
 [ext_resource type="FontFile" uid="uid://dsyfoq56seh4p" path="res://art/Minecraftia-Regular.ttf" id="1_dj8aq"]
+[ext_resource type="Script" uid="uid://bsr3gfqctdhgk" path="res://scenes/open_menu.gd" id="2_ro3t7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dj8aq"]
 bg_color = Color(0.230315, 0.230315, 0.230315, 1)
@@ -35,8 +36,9 @@ offset_bottom = 47.0
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "↓ TRAPS ↓"
+script = ExtResource("2_ro3t7")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="bgMenu" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = 925.0
 offset_top = 47.0
@@ -44,7 +46,7 @@ offset_right = 1135.0
 offset_bottom = 347.0
 color = Color(0.231373, 0.231373, 0.231373, 0.521569)
 
-[node name="ICE" type="Button" parent="ColorRect"]
+[node name="ICE" type="Button" parent="bgMenu"]
 layout_mode = 0
 offset_left = 5.0
 offset_top = 26.0
@@ -54,7 +56,7 @@ theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "ICE ($333)"
 
-[node name="EGG" type="Button" parent="ColorRect"]
+[node name="EGG" type="Button" parent="bgMenu"]
 offset_left = 5.0
 offset_top = 67.0
 offset_right = 205.0
@@ -62,3 +64,5 @@ offset_bottom = 103.0
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "EGGS ($200)"
+
+[connection signal="pressed" from="openMenu" to="openMenu" method="_on_pressed"]
