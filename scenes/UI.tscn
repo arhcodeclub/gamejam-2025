@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://sbslr0lbyr0p"]
 
-[ext_resource type="FontFile" uid="uid://dsyfoq56seh4p" path="res://assets/art/fonts/Minecraftia-Regular.ttf" id="1_dj8aq"]
-[ext_resource type="Script" path="res://scenes/open_menu.gd" id="2_ro3t7"]
+[ext_resource type="FontFile" path="res://assets/art/fonts/Minecraftia-Regular.ttf" id="1_dj8aq"]
+[ext_resource type="Script" uid="uid://bsr3gfqctdhgk" path="res://scenes/open_menu.gd" id="2_ro3t7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dj8aq"]
 bg_color = Color(0.230315, 0.230315, 0.230315, 1)
