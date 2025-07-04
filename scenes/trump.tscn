@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=0 format=3 uid="uid://dletfa8ktbbxa"]
-=======
-[gd_scene format=3 uid="uid://ludi4dns8nn5"]
->>>>>>> Stashed changes
 
 [node name="trump" type="Node2D"]
 
