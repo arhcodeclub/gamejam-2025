@@ -9,6 +9,7 @@
 [sub_resource type="Animation" id="Animation_6axmc"]
 resource_name = "trump rotate"
 length = 4.0
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -189,6 +190,7 @@ texture = ExtResource("5_25p4b")
 libraries = {
 &"": SubResource("AnimationLibrary_o4hxp")
 }
+autoplay = "trump rotate"
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(941, 310)
