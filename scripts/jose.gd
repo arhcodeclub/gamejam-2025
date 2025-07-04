@@ -4,6 +4,9 @@ extends CharacterBody2D
 @export var jump_speed : int = 100
 @export var gravity : int = 25
 
+@onready var timer = $Timer
+@onready var losing = $losing
+
 var done = false
 
 func resetToBorder() -> void:
@@ -29,5 +32,10 @@ func _on_animated_sprite_2d_animation_changed() -> void:
 		$AnimatedSprite2D.scale = Vector2(3, 3)
 
 func _process(_delta: float) -> void:
-	if position.x >= 10000:
+	if position.x >= 10250:
 		done = true
+		losing.play()
+		timer.start()
+
+func _on_timer_timeout():
+	get_tree().change_scene_to_file("res://scenes/Mainmenu.tscn");

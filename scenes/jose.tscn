@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://doibf4ylvtfsa"]
+[gd_scene load_steps=13 format=3 uid="uid://doibf4ylvtfsa"]
 
 [ext_resource type="Script" uid="uid://be3koty5g35lf" path="res://scripts/jose.gd" id="1_eyrk1"]
 [ext_resource type="Texture2D" uid="uid://crutr6swt31gm" path="res://assets/art/jose_idle.png" id="2_givbp"]
 [ext_resource type="Texture2D" uid="uid://bm0oqqg178xuc" path="res://assets/art/jose.png" id="3_3pkag"]
+[ext_resource type="AudioStream" uid="uid://dd6ppbv4p52ju" path="res://assets/sounds/losing.ogg" id="4_tlafv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tlafv"]
 atlas = ExtResource("2_givbp")
@@ -76,3 +77,12 @@ shape = SubResource("RectangleShape2D_d75xg")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(50, 0)
+
+[node name="losing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_tlafv")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
