@@ -29,5 +29,5 @@ func _on_animated_sprite_2d_animation_changed() -> void:
 		$AnimatedSprite2D.scale = Vector2(3, 3)
 
 func _process(_delta: float) -> void:
-	if position.x >= 10000:
+	if position.x >= 10250:
 		done = true
