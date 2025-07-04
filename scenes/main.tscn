@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://cvojqbs6ug8vu"]
+[gd_scene load_steps=26 format=4 uid="uid://cvojqbs6ug8vu"]
 
 [ext_resource type="Script" uid="uid://djkafo8kqpfin" path="res://scripts/global.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://sbslr0lbyr0p" path="res://scenes/UI.tscn" id="1_o5qli"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://5t5vv575y0m7" path="res://assets/art/building.png" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://sfmnefuy237" path="res://assets/art/border.png" id="9_85g3d"]
 [ext_resource type="Texture2D" uid="uid://dso44feiprbq1" path="res://assets/art/traffic.png" id="9_choun"]
+[ext_resource type="Texture2D" uid="uid://bywk16v6dqcju" path="res://assets/art/Stopbord.png" id="11_ya4ey"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_choun"]
 texture = ExtResource("3_tipki")
@@ -327,7 +328,18 @@ scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_jkv2x")
 autoplay = "default"
 
+[node name="light2" type="AnimatedSprite2D" parent="."]
+position = Vector2(5108, 804)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_jkv2x")
+autoplay = "default"
+
 [node name="flag" type="Sprite2D" parent="."]
 position = Vector2(-2, 448)
 scale = Vector2(2, 2)
 texture = ExtResource("9_85g3d")
+
+[node name="bord" type="Sprite2D" parent="."]
+position = Vector2(3556, 431)
+scale = Vector2(3, 3)
+texture = ExtResource("11_ya4ey")
