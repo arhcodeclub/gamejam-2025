@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://cvojqbs6ug8vu"]
+[gd_scene load_steps=18 format=4 uid="uid://cvojqbs6ug8vu"]
 
 [ext_resource type="Script" uid="uid://djkafo8kqpfin" path="res://scripts/global.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://sbslr0lbyr0p" path="res://scenes/UI.tscn" id="1_o5qli"]
@@ -8,9 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://cr6wujc0u8rne" path="res://assets/art/Sky.png" id="4_85g3d"]
 [ext_resource type="PackedScene" uid="uid://doibf4ylvtfsa" path="res://scenes/jose.tscn" id="4_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://5t5vv575y0m7" path="res://assets/art/building.png" id="6_tefeu"]
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_sugp2"]
-distance = -581.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_choun"]
 texture = ExtResource("3_tipki")
@@ -260,13 +257,6 @@ position = Vector2(101, 152)
 
 [node name="Camera2D" type="Camera2D" parent="Jose"]
 position_smoothing_enabled = true
-
-[node name="Scene" type="Node" parent="."]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Scene"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Scene/StaticBody2D"]
-shape = SubResource("WorldBoundaryShape2D_sugp2")
 
 [node name="tilemaps" type="Node2D" parent="."]
 
