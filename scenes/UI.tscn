@@ -5,7 +5,7 @@
 
 [sub_resource type="GDScript" id="GDScript_ro3t7"]
 script/source = "extends Control
-@onready var global = $\"..\"
+@onready var global = $\"../..\"
 func _process(_delta: float) -> void:
 	$money.text = \"Money: \" +  str(global.money)
 	$remaining.text = \"Distance remaining: \" + str(1000 - global.distance) + \"m\"
