@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ludi4dns8nn5"]
+[gd_scene load_steps=15 format=3 uid="uid://b7wxbpeq4iwqu"]
 
 [ext_resource type="Script" uid="uid://6s7nho0o7k2k" path="res://scripts/trump.gd" id="1_x6hnt"]
 [ext_resource type="Texture2D" uid="uid://bjfmof7tn67xo" path="res://assets/art/Trump Idle Angry.png" id="2_t41ut"]
@@ -92,7 +92,8 @@ script = ExtResource("1_x6hnt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_x6hnt")
-animation = &"anger_2"
+animation = &"normal"
+autoplay = "normal"
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
