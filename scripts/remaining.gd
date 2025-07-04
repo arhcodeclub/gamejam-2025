@@ -31,4 +31,4 @@ func _process(delta):
 
 func _on_short_timer_timeout():
 	print("Change to main")
-	get_tree().change_scene_to_file("res://scenes/Win.tscn");
+	get_tree().change_scene_to_file("res://Win.tscn");
