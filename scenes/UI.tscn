@@ -422,5 +422,6 @@ offset_bottom = 347.0
 color = Color(0.231373, 0.231373, 0.231373, 0.521569)
 
 [connection signal="pressed" from="openMenu" to="openMenu" method="_on_pressed"]
+[connection signal="pressed" from="traps/VBoxContainer/EGG" to="." method="_on_egg_pressed"]
 [connection signal="pressed" from="traps/VBoxContainer/NATIONAL_GUARD" to="." method="_on_national_guard_pressed"]
 [connection signal="pressed" from="traps/VBoxContainer/ICE" to="." method="_on_ice_pressed"]

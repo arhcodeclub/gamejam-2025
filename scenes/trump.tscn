@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ludi4dns8nn5"]
+[gd_scene load_steps=15 format=3 uid="uid://b7wxbpeq4iwqu"]
 
 [ext_resource type="Script" uid="uid://6s7nho0o7k2k" path="res://scripts/trump.gd" id="1_x6hnt"]
 [ext_resource type="Texture2D" uid="uid://bjfmof7tn67xo" path="res://assets/art/Trump Idle Angry.png" id="2_t41ut"]
