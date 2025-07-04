@@ -10,28 +10,21 @@ script/source = "extends Control
 func _process(_delta: float) -> void:
 	$money.text = \"Money: \" +  str(global.money)
 	$remaining.text = \"Distance remaining: \" + str(1000 - global.distance) + \"m\"
-	if global.money >= 200:
-		$traps/VBoxContainer/EGG.add_theme_color_override(\"font_color\", Color.GREEN)
-		$traps/VBoxContainer/NATIONAL_GUARD.add_theme_color_override(\"font_color\", Color.GREEN)
-	if global.money >= 333:
-		$traps/VBoxContainer/ICE.add_theme_color_override(\"font_color\", Color.GREEN)
-	if global.money <= 200:
-		$traps/VBoxContainer/EGG.add_theme_color_override(\"font_color\", 888)
-		$traps/VBoxContainer/NATIONAL_GUARD.add_theme_color_override(\"font_color\", 888)
-	if global.money <= 333:
-		$traps/VBoxContainer/ICE.add_theme_color_override(\"font_color\", 888)
-
-
-func _on_national_guard_pressed() -> void:
-	global.money -= 200
-
-
-func _on_ice_pressed() -> void:
-	global.money -= 333
-
-
-func _on_egg_pressed() -> void:
-	global.money -= 200
+	if global.money <=200:
+		$traps/VBoxContainer/EGG.disabled = true
+		$traps/VBoxContainer/NATIONAL_GUARD.disabled = true
+	else:
+		$traps/VBoxContainer/EGG.disabled = false
+		$traps/VBoxContainer/NATIONAL_GUARD.disabled = false
+	if global.money <=333:
+		$traps/VBoxContainer/ICE.disabled = true
+	else:
+		$traps/VBoxContainer/ICE.disabled = false
+	
+	if $traps/VBoxContainer/EGG.button_pressed:
+		global.money -= 200
+		$\"../../Jose\".resetToBorder()
+			
 "
 
 [sub_resource type="Image" id="Image_ro3t7"]
@@ -394,7 +387,17 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "↓ TRAPS ↓"
 script = ExtResource("2_ro3t7")
 
-[node name="traps" type="Node2D" parent="."]
+[node name="traps" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bgMenu" type="ColorRect" parent="traps"]
+offset_left = 895.0
+offset_top = 47.0
+offset_right = 1135.0
+offset_bottom = 347.0
+color = Color(0.231373, 0.231373, 0.231373, 0.521569)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="traps"]
 offset_left = 895.0
@@ -420,14 +423,4 @@ theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "ICE ($333)"
 
-[node name="bgMenu" type="ColorRect" parent="traps"]
-offset_left = 895.0
-offset_top = 47.0
-offset_right = 1135.0
-offset_bottom = 347.0
-color = Color(0.231373, 0.231373, 0.231373, 0.521569)
-
 [connection signal="pressed" from="openMenu" to="openMenu" method="_on_pressed"]
-[connection signal="pressed" from="traps/VBoxContainer/EGG" to="." method="_on_egg_pressed"]
-[connection signal="pressed" from="traps/VBoxContainer/NATIONAL_GUARD" to="." method="_on_national_guard_pressed"]
-[connection signal="pressed" from="traps/VBoxContainer/ICE" to="." method="_on_ice_pressed"]
