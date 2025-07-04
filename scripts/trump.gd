@@ -12,4 +12,3 @@ func _process(_delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	global.money += money_per_second
-	print(global.money)
