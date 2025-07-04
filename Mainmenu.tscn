@@ -1,6 +1,10 @@
 [gd_scene load_steps=0 format=3 uid="uid://bit0lxmeonjgp"]
+[gd_scene load_steps=2 format=3 uid="uid://bit0lxmeonjgp"]
+
+[ext_resource type="Script" uid="uid://cb1nve832b68p" path="res://mainmenu.gd" id="1_e8kt5"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_e8kt5")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -23,3 +27,8 @@ offset_top = 142.0
 offset_right = 731.0
 offset_bottom = 270.0
 text = "Play game"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[connection signal="pressed" from="Control/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Control/Button3" to="." method="_on_button_3_pressed"]
