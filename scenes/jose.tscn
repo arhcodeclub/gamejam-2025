@@ -1,6 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://doibf4ylvtfsa"]
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vv112"]
+[gd_scene load_steps=0 format=3 uid="uid://doibf4ylvtfsa"]
 
 [node name="jose" type="CharacterBody2D"]
 
