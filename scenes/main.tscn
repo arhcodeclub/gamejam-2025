@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://cvojqbs6ug8vu"]
+[gd_scene load_steps=32 format=4 uid="uid://cvojqbs6ug8vu"]
 
 [ext_resource type="Script" uid="uid://djkafo8kqpfin" path="res://scripts/global.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://sbslr0lbyr0p" path="res://scenes/UI.tscn" id="1_o5qli"]
@@ -16,6 +16,7 @@
 [ext_resource type="AudioStream" uid="uid://dvdh5n5aualg3" path="res://assets/sounds/gay.mp3" id="14_a8y0u"]
 [ext_resource type="Texture2D" uid="uid://38ci20i8l3mr" path="res://assets/art/demonstrant.png" id="14_jkv2x"]
 [ext_resource type="Texture2D" uid="uid://dbgdf00eora3j" path="res://assets/art/New Piskel.png" id="15_jbj1t"]
+[ext_resource type="Texture2D" uid="uid://d1s50ud6m412q" path="res://ice.png" id="16_muem4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_choun"]
 texture = ExtResource("3_tipki")
@@ -378,6 +379,11 @@ texture = ExtResource("14_jkv2x")
 position = Vector2(568.389, -50.4854)
 scale = Vector2(0.15008, 0.15008)
 texture = ExtResource("15_jbj1t")
+
+[node name="ICE" type="Sprite2D" parent="demonstrant"]
+position = Vector2(2507.96, 22.5243)
+scale = Vector2(0.21076, 0.21076)
+texture = ExtResource("16_muem4")
 
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_a8y0u")
