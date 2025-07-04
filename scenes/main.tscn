@@ -270,6 +270,8 @@ tile_map_data = PackedByteArray("AAD7//7/AQAAAAAAAAD8//7/AQAAAAAAAAD9////AQAAAAA
 tile_set = SubResource("TileSet_eb6dy")
 
 [node name="clouds" type="TileMapLayer" parent="tilemaps"]
+scale = Vector2(5, 5)
+tile_map_data = PackedByteArray("AAADAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAPAP//AAAAAAAAAAASAAEAAAAAAAAAAAAYAAAAAAAAAAAAAAAZAAIAAAAAAAAAAAAeAAMAAAAAAAAAAAAjAAEAAAAAAAAAAAAfAAEAAAAAAAAAAAAnAAIAAAAAAAAAAAAtAAEAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_a8y0u")
 
 [node name="building" type="TileMapLayer" parent="tilemaps"]
