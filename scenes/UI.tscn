@@ -381,7 +381,7 @@ one_shot = true
 stream = ExtResource("3_ua6yw")
 
 [node name="ShortTimer" type="Timer" parent="remaining"]
-wait_time = 3.0
+wait_time = 5.0
 
 [node name="openMenu" type="Button" parent="."]
 layout_mode = 0

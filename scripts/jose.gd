@@ -11,7 +11,7 @@ extends CharacterBody2D
 var done = false
 
 func resetToBorder() -> void:
-	position.x = 0
+	position.x = -300
 	position.y = 200
 
 func _ready() -> void:

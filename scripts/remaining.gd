@@ -3,7 +3,7 @@ extends Label
 @onready var timer = $Timer
 @onready var victory = $victory
 @onready var short_timer = $ShortTimer
-@onready var music = $music
+@onready var music = $"../../../music"
 
 var done = false
 
