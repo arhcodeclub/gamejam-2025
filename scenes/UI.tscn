@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=4 uid="uid://sbslr0lbyr0p"]
 
 [ext_resource type="FontFile" uid="uid://dsyfoq56seh4p" path="res://assets/fonts/Minecraftia-Regular.ttf" id="1_dj8aq"]
-[ext_resource type="Script" uid="uid://cymgmnvf412bs" path="res://scripts/remaining.gd" id="2_5en4g"]
+[ext_resource type="Script" path="res://scripts/remaining.gd" id="2_5en4g"]
 [ext_resource type="Script" uid="uid://bsr3gfqctdhgk" path="res://scripts/open_menu.gd" id="2_ro3t7"]
 
 [sub_resource type="GDScript" id="GDScript_ro3t7"]
