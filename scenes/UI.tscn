@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://sbslr0lbyr0p"]
+[gd_scene load_steps=11 format=4 uid="uid://sbslr0lbyr0p"]
 
 [ext_resource type="FontFile" uid="uid://dsyfoq56seh4p" path="res://assets/fonts/Minecraftia-Regular.ttf" id="1_dj8aq"]
 [ext_resource type="Script" uid="uid://cymgmnvf412bs" path="res://scripts/remaining.gd" id="2_5en4g"]
 [ext_resource type="Script" uid="uid://bsr3gfqctdhgk" path="res://scripts/open_menu.gd" id="2_ro3t7"]
+[ext_resource type="AudioStream" uid="uid://c587r5nmx47wp" path="res://assets/sounds/Victory-Sound-Effect.ogg" id="3_ua6yw"]
 
 [sub_resource type="GDScript" id="GDScript_ro3t7"]
 script/source = "extends Control
@@ -383,6 +384,12 @@ script = ExtResource("2_5en4g")
 wait_time = 60.0
 one_shot = true
 
+[node name="victory" type="AudioStreamPlayer" parent="remaining"]
+stream = ExtResource("3_ua6yw")
+
+[node name="ShortTimer" type="Timer" parent="remaining"]
+wait_time = 3.0
+
 [node name="openMenu" type="Button" parent="."]
 layout_mode = 0
 offset_left = 895.0
@@ -427,6 +434,7 @@ offset_right = 1135.0
 offset_bottom = 347.0
 color = Color(0.231373, 0.231373, 0.231373, 0.521569)
 
+[connection signal="timeout" from="remaining/ShortTimer" to="remaining" method="_on_short_timer_timeout"]
 [connection signal="pressed" from="openMenu" to="openMenu" method="_on_pressed"]
 [connection signal="pressed" from="traps/VBoxContainer/EGG" to="." method="_on_egg_pressed"]
 [connection signal="pressed" from="traps/VBoxContainer/NATIONAL_GUARD" to="." method="_on_national_guard_pressed"]

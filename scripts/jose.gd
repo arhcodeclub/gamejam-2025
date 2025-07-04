@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var gravity : int = 25
 
 @onready var timer = $Timer
+@onready var losing = $losing
 
 var done = false
 
@@ -33,6 +34,7 @@ func _on_animated_sprite_2d_animation_changed() -> void:
 func _process(_delta: float) -> void:
 	if position.x >= 10250:
 		done = true
+		losing.play()
 		timer.start()
 
 func _on_timer_timeout():
