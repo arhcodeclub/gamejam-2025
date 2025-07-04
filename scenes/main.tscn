@@ -7,52 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://doibf4ylvtfsa" path="res://scenes/jose.tscn" id="4_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://5t5vv575y0m7" path="res://assets/art/building.png" id="6_tefeu"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
-texture = ExtResource("3_tbgi4")
-texture_region_size = Vector2i(192, 192)
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-3:0/0 = 0
-3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-4:0/0 = 0
-4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-5:0/0 = 0
-5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-2:1/0 = 0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-3:1/0 = 0
-3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-4:1/0 = 0
-4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-5:1/0 = 0
-5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-0:2/0 = 0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-1:2/0 = 0
-1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-2:2/0 = 0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-3:2/0 = 0
-3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-4:2/0 = 0
-4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-5:2/0 = 0
-5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
-
-[sub_resource type="TileSet" id="TileSet_o6xl0"]
-tile_size = Vector2i(192, 192)
-physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_tefeu")
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_sugp2"]
-distance = -581.0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o6xl0"]
 texture = ExtResource("6_tefeu")
 margins = Vector2i(0, 56)
@@ -199,17 +153,64 @@ texture_region_size = Vector2i(128, 72)
 tile_size = Vector2i(128, 72)
 sources/0 = SubResource("TileSetAtlasSource_o6xl0")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
+texture = ExtResource("3_tbgi4")
+texture_region_size = Vector2i(192, 192)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-96, -96, 96, -96, 96, 96, -96, 96)
+
+[sub_resource type="TileSet" id="TileSet_o6xl0"]
+tile_size = Vector2i(192, 192)
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_tefeu")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_sugp2"]
+distance = -581.0
+
 [node name="main" type="Node2D"]
 script = ExtResource("1_0wfyh")
 
 [node name="Control" parent="." instance=ExtResource("1_o5qli")]
 
-[node name="tilemap" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AADIAOYAAAAAAAAAAAABAAMAAQAEAAAAAAACAAMAAQAEAAAAAAAAAAMAAQAEAAAAAAADAAMAAQAEAAAAAAAEAAMAAQAEAAAAAAAFAAMAAQAEAAAAAAAGAAMAAQACAAIAAAABAAIAAwAAAAAAAAA=")
-tile_set = SubResource("TileSet_o6xl0")
+[node name="building" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAADAAQAAAAAAAAAAAADAAcAAAAAAAAAAAADAAYAAAAAAAAAAAADAAUAAAAAAAAAAAADAAMAAAADAAAAAAA=")
+tile_set = SubResource("TileSet_tipki")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-anchor_mode = 0
+[node name="tilemap" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AADIAOYAAAAAAAAAAAABAAMAAQAEAAAAAAACAAMAAQAEAAAAAAAAAAMAAQAEAAAAAAADAAMAAQAEAAAAAAAEAAMAAQAEAAAAAAAFAAMAAQAEAAAAAAAGAAMAAQACAAIAAAAGAAIAAQADAAAAAAA=")
+tile_set = SubResource("TileSet_o6xl0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -220,13 +221,12 @@ scale = Vector2(0.75, 0.75)
 [node name="Jose" parent="." instance=ExtResource("4_jyhfs")]
 position = Vector2(101, 152)
 
+[node name="Camera2D" type="Camera2D" parent="Jose"]
+position_smoothing_enabled = true
+
 [node name="Scene" type="Node" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Scene"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scene/StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_sugp2")
-
-[node name="building" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAADAAQAAAAAAAAAAAADAAcAAAAAAAAAAAADAAYAAAAAAAAAAAADAAUAAAAAAAAAAAADAAMAAAADAAAAAAA=")
-tile_set = SubResource("TileSet_tipki")
