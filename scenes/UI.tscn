@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://sbslr0lbyr0p"]
+
+[ext_resource type="FontFile" uid="uid://dsyfoq56seh4p" path="res://art/Minecraftia-Regular.ttf" id="1_dj8aq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.005
+anchor_bottom = 0.008
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 300.24
+offset_bottom = 57.816
+theme_override_fonts/font = ExtResource("1_dj8aq")
+theme_override_font_sizes/font_size = 32
+text = "Money: $x"
