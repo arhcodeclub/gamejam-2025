@@ -1,7 +1,14 @@
-[gd_scene load_steps=8 format=4 uid="uid://sbslr0lbyr0p"]
+[gd_scene load_steps=9 format=4 uid="uid://sbslr0lbyr0p"]
 
-[ext_resource type="FontFile" path="res://assets/art/fonts/Minecraftia-Regular.ttf" id="1_dj8aq"]
-[ext_resource type="Script" uid="uid://bsr3gfqctdhgk" path="res://scripts/open_menu.gd" id="2_ro3t7"]
+[ext_resource type="FontFile" uid="uid://dsyfoq56seh4p" path="res://assets/fonts/Minecraftia-Regular.ttf" id="1_dj8aq"]
+[ext_resource type="Script" path="res://scripts/open_menu.gd" id="2_ro3t7"]
+
+[sub_resource type="GDScript" id="GDScript_ro3t7"]
+script/source = "extends Control
+@onready var global = $\"..\"
+func _process(_delta: float) -> void:
+	$money.text = \"Money: \" +  str(global.money)
+"
 
 [sub_resource type="Image" id="Image_ro3t7"]
 data = {
@@ -36,6 +43,7 @@ font_name = "Minecraftia"
 style_name = "Regular"
 subpixel_positioning = 0
 msdf_pixel_range = 8
+msdf_size = 128
 cache/0/16/0/ascent = 28.0
 cache/0/16/0/descent = -6.0
 cache/0/16/0/underline_position = -1.1875
@@ -318,6 +326,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = SubResource("GDScript_ro3t7")
 
 [node name="money" type="Label" parent="."]
 layout_mode = 1
