@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsoiayu42upvt"]
+
+[ext_resource type="Texture2D" uid="uid://n31ixj5hro7l" path="res://assets/art/download__4_-removebg-preview.png" id="1_mexgb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="You lose" type="Sprite2D" parent="."]
+position = Vector2(47, 168)
+texture = ExtResource("1_mexgb")
