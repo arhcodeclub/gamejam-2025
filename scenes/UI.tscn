@@ -8,6 +8,9 @@
 [sub_resource type="GDScript" id="GDScript_ro3t7"]
 script/source = "extends Control
 @onready var global =$\"../..\"
+
+var Royal: bool = false
+
 func _process(_delta: float) -> void:
 	$money.text = \"Money: $\" +  str(global.money)
 	$remaining.text = \"Distance remaining: \" + str(1000 - global.distance) + \"m\"
@@ -30,9 +33,14 @@ func _process(_delta: float) -> void:
 		$\"../../Jose\".speed = 150
 	if $traps/VBoxContainer/EGG.button_pressed:
 		global.money -=  200
+		if $\"../../Jose\".speed == 150:
+			Royal = true
 		$\"../../Jose\".speed = 0
 		await get_tree().create_timer(5.0).timeout
-		$\"../../Jose\".speed = 256
+		if Royal == true:
+			$\"../../Jose\".speed = 150
+		else: 
+			$\"../../Jose\".speed = 256
 "
 
 [sub_resource type="Image" id="Image_ro3t7"]
