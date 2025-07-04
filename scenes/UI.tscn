@@ -28,17 +28,28 @@ func _process(_delta: float) -> void:
 		$traps/VBoxContainer/ICE.disabled = false
 	
 	if $traps/VBoxContainer/ICE.button_pressed:
+		$message.visible = true
+		$message.text = \"Trump used ICE! José is now sent back to the southern border! it's a critical hit!\"
 		global.money -=  333
 		$\"../../Jose\".resetToBorder()
+		await get_tree().create_timer(5.0).timeout
+		$message.visible = false
 	if $traps/VBoxContainer/NATIONAL_GUARD.button_pressed:
+		$message.visible = true
+		$message.text = \"Trump used the national guard! José is now alot slower!\"
 		global.money -= 200
 		$\"../../Jose\".speed = 150
+		await get_tree().create_timer(5.0).timeout
+		$message.visible = false
 	if $traps/VBoxContainer/EGG.button_pressed:
+		$message.visible = true
+		$message.text = \"Trump used egg! José is now frozen in place for 5 seconds!\"
 		global.money -=  200
 		if $\"../../Jose\".speed == 150:
 			Royal = true
 		$\"../../Jose\".speed = 0
 		await get_tree().create_timer(5.0).timeout
+		$message.visible = false
 		if Royal == true:
 			$\"../../Jose\".speed = 150
 		else: 
@@ -444,6 +455,16 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "ICE ($333)"
+
+[node name="message" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_top = 159.0
+offset_right = 1152.0
+offset_bottom = 187.0
+theme_override_fonts/font = ExtResource("1_dj8aq")
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada rutrum varius."
+horizontal_alignment = 1
 
 [connection signal="timeout" from="remaining/ShortTimer" to="remaining" method="_on_short_timer_timeout"]
 [connection signal="pressed" from="openMenu" to="openMenu" method="_on_pressed"]
