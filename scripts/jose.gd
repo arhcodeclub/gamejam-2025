@@ -6,6 +6,7 @@ extends CharacterBody2D
 
 @onready var timer = $Timer
 @onready var losing = $losing
+@onready var music = $"../music"
 
 var done = false
 
@@ -35,6 +36,7 @@ func _process(_delta: float) -> void:
 	if position.x >= 10300 && done != true:
 		print("done")
 		done = true
+		music.stop()
 		losing.play()
 		print("start timer")
 		timer.start()

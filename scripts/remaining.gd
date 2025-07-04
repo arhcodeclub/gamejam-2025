@@ -3,6 +3,7 @@ extends Label
 @onready var timer = $Timer
 @onready var victory = $victory
 @onready var short_timer = $ShortTimer
+@onready var music = $music
 
 var done = false
 
@@ -17,6 +18,7 @@ func _process(delta):
 		print("Timer up")
 		short_timer.start()
 		print("Victory playing")
+		music.stop()
 		victory.play()
 
 func _on_short_timer_timeout():
