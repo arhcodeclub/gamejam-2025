@@ -1,43 +1,43 @@
-[gd_scene load_steps=3 format=3 uid="uid://do64al3u2bn4y"]
+[gd_scene load_steps=3 format=3 uid="uid://your_scene_uid_here"]
 
-[ext_resource type="Script" uid="uid://cb1nve832b68p" path="res://mainmenu.gd" id="1"]
-[ext_resource type="Script" uid="uid://db7q0fe1m2shj" path="res://parallax_background.gd" id="2"]
-[gd_scene load_steps=3 format=3 uid="uid://bit0lxmeonjgp"]
+; External scripts
+[ext_resource type="Script" id=1 path="res://scripts/mainmenu.gd"]
+[ext_resource type="Script" id=2 path="res://scripts/parallax_background.gd"]
 
-[ext_resource type="Script" uid="uid://cb1nve832b68p" path="res://scripts/mainmenu.gd" id="1"]
-[ext_resource type="Script" uid="uid://cx7era4h70qw7" path="res://scripts/parallax_background.gd" id="2"]
-
+; Root node
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1")
+script = ExtResource( 1 )
 
+; Parallax background setup
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-script = ExtResource("2")
+script = ExtResource( 2 )
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+  [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+  [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-
+; UI container   
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Play" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 421.0
-offset_top = 142.0
-offset_right = 731.0
-offset_bottom = 270.0
-text = "Play game"
+  [node name="Play" type="Button" parent="Control"]
+  layout_mode = 0
+  offset_left = 421.0
+  offset_top = 142.0
+  offset_right = 731.0
+  offset_bottom = 270.0
+  text = "Play game"
 
-[node name="Quit" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 421.0
-offset_top = 413.0
-offset_right = 731.0
-offset_bottom = 541.0
-text = "Quit game"
+  [node name="Quit" type="Button" parent="Control"]
+  layout_mode = 0
+  offset_left = 421.0
+  offset_top = 413.0
+  offset_right = 731.0
+  offset_bottom = 541.0
+  text = "Quit game"
 
-[connection signal="pressed" from="Control/Play" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="Control/Quit" to="." method="_on_button_2_pressed"]
+; Signal connections
+[connection signal="pressed" from="Control/Play" to="Node2D" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Control/Quit" to="Node2D" method="_on_button_2_pressed"]
