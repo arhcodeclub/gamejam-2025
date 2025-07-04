@@ -475,11 +475,12 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "ICE ($333)"
 
 [node name="message" type="Label" parent="."]
+visible = false
 layout_mode = 0
-offset_left = -1.0
-offset_top = 600.0
-offset_right = 1151.0
-offset_bottom = 628.0
+offset_left = 1.0
+offset_top = 590.0
+offset_right = 889.0
+offset_bottom = 618.0
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_font_sizes/font_size = 16
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada rutrum varius."
