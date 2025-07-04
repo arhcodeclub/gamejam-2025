@@ -1,10 +1,37 @@
 [gd_scene load_steps=9 format=3 uid="uid://bit0lxmeonjgp"]
 
 [ext_resource type="Script" uid="uid://cb1nve832b68p" path="res://mainmenu.gd" id="1"]
-[ext_resource type="Script" path="res://scripts/parallax_background.gd" id="2"]
+[ext_resource type="Script" uid="uid://cx7era4h70qw7" path="res://scripts/parallax_background.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://cr6wujc0u8rne" path="res://assets/art/Sky.png" id="3_krtfg"]
 [ext_resource type="Texture2D" uid="uid://dtu3fbo08yiut" path="res://assets/art/clouds.png" id="4_25p4b"]
 [ext_resource type="Texture2D" uid="uid://bpp0vnsckpqh1" path="res://assets/art/icon.svg" id="5_25p4b"]
+
+[sub_resource type="Animation" id="Animation_esalh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.523599]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Sprite2D2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
 [sub_resource type="Animation" id="Animation_6axmc"]
 resource_name = "trump rotate"
@@ -33,33 +60,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.349066, -0.698132, 0.0]
-}
-
-[sub_resource type="Animation" id="Animation_esalh"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [-0.523599]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../Sprite2D2:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_o4hxp"]

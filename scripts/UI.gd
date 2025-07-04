@@ -2,7 +2,7 @@ extends Control
 @onready var global = $".."
 
 func _process(_delta: float) -> void:
-	$money.text = "Money: " +  str(global.money)
+	$money.text = "Money: " +  str(int(global.money))
 	$remaining.text = "Distance remaining: " + str(1000 - global.distance) + "m"
 	if global.money <=200:
 		$traps/VBoxContainer/EGG.disabled = true
