@@ -4,6 +4,10 @@ extends CharacterBody2D
 @export var jump_speed : int = 100
 @export var gravity : int = 25
 
+func resetToBorder() -> void:
+	position.x = 0
+	position.y = 100
+
 func _ready() -> void:
 	$AnimatedSprite2D.play("running")
 	$AnimatedSprite2D.scale = Vector2(3, 3)
