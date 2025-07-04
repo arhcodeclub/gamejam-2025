@@ -36,6 +36,7 @@ func _process(_delta: float) -> void:
 	if position.x >= 10300 && done != true:
 		print("done")
 		done = true
+		speed = 0
 		music.stop()
 		losing.play()
 		print("start timer")
