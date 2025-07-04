@@ -32,10 +32,13 @@ func _on_animated_sprite_2d_animation_changed() -> void:
 		$AnimatedSprite2D.scale = Vector2(3, 3)
 
 func _process(_delta: float) -> void:
-	if position.x >= 10250:
+	if position.x >= 10300 && done != true:
+		print("done")
 		done = true
 		losing.play()
+		print("start timer")
 		timer.start()
 
 func _on_timer_timeout():
+	print("Change to menu")
 	get_tree().change_scene_to_file("res://scenes/Mainmenu.tscn");
