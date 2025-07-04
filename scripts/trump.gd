@@ -4,11 +4,12 @@ extends Node2D
 
 func _ready() -> void:
 	$Timer.set_wait_time(1)
-
+@onready var global = $".."
 
 func _process(_delta: float) -> void:
 	pass
 
 
 func _on_timer_timeout() -> void:
-	print("timeout")
+	global.money += money_per_second
+	print(global.money)
