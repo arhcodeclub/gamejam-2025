@@ -22,10 +22,17 @@ func _process(_delta: float) -> void:
 	else:
 		$traps/VBoxContainer/ICE.disabled = false
 	
-	if $traps/VBoxContainer/EGG.button_pressed:
-		global.money -= 200
+	if $traps/VBoxContainer/ICE.button_pressed:
+		global.money -=  333
 		$\"../../Jose\".resetToBorder()
-			
+	if $traps/VBoxContainer/NATIONAL_GUARD.button_pressed:
+		global.money -= 200
+		$\"../../Jose\".speed = 150
+	if $traps/VBoxContainer/EGG.button_pressed:
+		global.money -=  200
+		$\"../../Jose\".speed = 0
+		await get_tree().create_timer(1.0).timeout
+		$\"../../Jose\".speed = 256
 "
 
 [sub_resource type="Image" id="Image_ro3t7"]
