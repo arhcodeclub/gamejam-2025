@@ -1,5 +1,18 @@
-[gd_scene load_steps=0 format=3 uid="uid://dletfa8ktbbxa"]
+[gd_scene load_steps=4 format=3 uid="uid://ludi4dns8nn5"]
+
+[ext_resource type="Script" uid="uid://6s7nho0o7k2k" path="res://scripts/trump.gd" id="1_x6hnt"]
+[ext_resource type="Script" uid="uid://d2aginnaxwdem" path="res://scripts/one_second_timer.gd" id="2_ri620"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x6hnt"]
 
 [node name="trump" type="Node2D"]
+script = ExtResource("1_x6hnt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_x6hnt")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+script = ExtResource("2_ri620")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
