@@ -16,8 +16,8 @@ motion_mirroring = Vector2(1152, 0)
 
 [node name="Sky" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 show_behind_parent = true
-position = Vector2(576, 324)
-scale = Vector2(36, 20.25)
+position = Vector2(576, 559)
+scale = Vector2(36, 34.9375)
 texture = ExtResource("3_krtfg")
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
@@ -40,6 +40,16 @@ position = Vector2(727, 522)
 scale = Vector2(8.96875, 4.72656)
 texture = ExtResource("4_25p4b")
 
+[node name="Sprite2D11" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(639, 910)
+scale = Vector2(8.96875, 4.72656)
+texture = ExtResource("4_25p4b")
+
+[node name="Sprite2D10" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(258, 885)
+scale = Vector2(8.96875, 4.72656)
+texture = ExtResource("4_25p4b")
+
 [node name="Sprite2D9" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(1015, 621)
 scale = Vector2(8.96875, 4.72656)
@@ -50,8 +60,28 @@ position = Vector2(452.125, 410.587)
 scale = Vector2(6.69531, 3.60666)
 texture = ExtResource("4_25p4b")
 
+[node name="Sprite2D15" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(458, 639)
+scale = Vector2(6.69531, 3.60666)
+texture = ExtResource("4_25p4b")
+
+[node name="Sprite2D12" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1608, 642)
+scale = Vector2(6.69531, 3.60666)
+texture = ExtResource("4_25p4b")
+
+[node name="Sprite2D13" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(957, 1104)
+scale = Vector2(6.69531, 3.60666)
+texture = ExtResource("4_25p4b")
+
 [node name="Sprite2D6" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(790, 215)
+scale = Vector2(9.375, 4.35156)
+texture = ExtResource("4_25p4b")
+
+[node name="Sprite2D14" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1061, 891)
 scale = Vector2(9.375, 4.35156)
 texture = ExtResource("4_25p4b")
 

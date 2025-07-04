@@ -91,6 +91,7 @@ animations = [{
 script = ExtResource("1_x6hnt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1252, 0)
 sprite_frames = SubResource("SpriteFrames_x6hnt")
 animation = &"normal"
 autoplay = "normal"
