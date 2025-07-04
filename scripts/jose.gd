@@ -3,7 +3,12 @@ extends CharacterBody2D
 @export var speed : int = 256
 @export var jump_speed : int = 100
 @export var gravity : int = 25
+
 var done = false
+
+func resetToBorder() -> void:
+	position.x = 0
+	position.y = 100
 
 func _ready() -> void:
 	$AnimatedSprite2D.play("running")
