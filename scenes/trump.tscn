@@ -1,5 +1,7 @@
-[gd_scene load_steps=0 format=3 uid="uid://dletfa8ktbbxa"]
+[gd_scene format=3 uid="uid://b7wxbpeq4iwqu"]
 
-[node name="trump" type="Node2D"]
+[node name="trump" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
