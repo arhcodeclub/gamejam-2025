@@ -6,7 +6,7 @@
 
 [sub_resource type="GDScript" id="GDScript_ro3t7"]
 script/source = "extends Control
-@onready var global = $\"../..\"
+@onready var global =$\"../..\"
 func _process(_delta: float) -> void:
 	$money.text = \"Money: \" +  str(global.money)
 	$remaining.text = \"Distance remaining: \" + str(1000 - global.distance) + \"m\"
@@ -22,16 +22,16 @@ func _process(_delta: float) -> void:
 		$traps/VBoxContainer/ICE.add_theme_color_override(\"font_color\", 888)
 
 
-func _on_egg_pressed() -> void:
-	global.money -= 200
-
-
 func _on_national_guard_pressed() -> void:
 	global.money -= 200
 
 
 func _on_ice_pressed() -> void:
 	global.money -= 333
+
+
+func _on_egg_pressed() -> void:
+	global.money -= 200
 "
 
 [sub_resource type="Image" id="Image_ro3t7"]
