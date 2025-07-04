@@ -16,6 +16,10 @@ func _process(_delta: float) -> void:
 	var rounded = str((round(global.money*pow(10,2))/pow(10,2)))
 	$money.text = \"Money: $\" +  rounded
 	$remaining.text = \"Distance remaining: \" + str(1000 - global.distance) + \"m\"
+	if global.money <= 160:
+		$traps/VBoxContainer/COVID.disabled=true
+	else:
+		$traps/VBoxContainer/COVID.disabled=false
 	if global.money <= 200:
 		$traps/VBoxContainer/EGG.disabled = true
 		$traps/VBoxContainer/NATIONAL_GUARD.disabled = true
@@ -54,6 +58,14 @@ func _process(_delta: float) -> void:
 			$\"../../Jose\".speed = 150
 		else: 
 			$\"../../Jose\".speed = 256
+			
+	if $traps/VBoxContainer/COVID.button_pressed:
+		$\"../../Jose\".speed += 15
+		global.money -=  160
+		$message.visible = true
+		$message.text = \"Lockdown happened, but people rebelled! José is now a bit faster!\"
+		await get_tree().create_timer(5.0).timeout
+		$message.visible = false
 "
 
 [sub_resource type="Image" id="Image_ro3t7"]
@@ -455,6 +467,12 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "ICE ($333)"
+
+[node name="COVID" type="Button" parent="traps/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_dj8aq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
+text = "COVID ($160)"
 
 [node name="message" type="Label" parent="."]
 visible = false
