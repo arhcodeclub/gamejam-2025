@@ -5,6 +5,7 @@ extends Label
 @onready var short_timer = $ShortTimer
 @onready var music = $"../../../music"
 @onready var alarm = $alarm
+@onready var jose = $"../../../Jose"
 
 var done = false
 var isPlaying = false
@@ -23,6 +24,7 @@ func _process(delta):
 		done = true
 		print("Timer up")
 		short_timer.start()
+		jose.speed = 0
 		print("Victory playing")
 		music.stop()
 		victory.play()
