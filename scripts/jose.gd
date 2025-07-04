@@ -8,7 +8,7 @@ var done = false
 
 func resetToBorder() -> void:
 	position.x = 0
-	position.y = 100
+	position.y = 200
 
 func _ready() -> void:
 	$AnimatedSprite2D.play("running")

@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://do64al3u2bn4y"]
 
-[ext_resource type="Script" path="res://mainmenu.gd" id="1"]
+[ext_resource type="Script" uid="uid://cb1nve832b68p" path="res://mainmenu.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/parallax_background.gd" id="2"]
 
 [node name="Node2D" type="Node2D"]
@@ -34,3 +34,6 @@ offset_top = 413.0
 offset_right = 731.0
 offset_bottom = 541.0
 text = "Quit game"
+
+[connection signal="pressed" from="Control/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Control/Quit" to="." method="_on_quit_pressed"]

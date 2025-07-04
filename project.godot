@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Gamejam 2025"
-run/main_scene="uid://bit0lxmeonjgp"
+run/main_scene="res://scenes/Mainmenu.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://assets/art/icon.svg"
 
