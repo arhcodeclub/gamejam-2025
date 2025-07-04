@@ -404,6 +404,7 @@ offset_bottom = 80.0
 layout_mode = 0
 offset_right = 240.0
 offset_bottom = 543.0
+mouse_filter = 0
 
 [node name="EGG" type="Button" parent="traps/VBoxContainer"]
 layout_mode = 2
@@ -422,12 +423,6 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("1_dj8aq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "ICE ($333)"
-
-[node name="bgMenu" type="ColorRect" parent="traps"]
-layout_mode = 0
-offset_right = 240.0
-offset_bottom = 300.0
-color = Color(0.231373, 0.231373, 0.231373, 0.521569)
 
 [connection signal="timeout" from="remaining/ShortTimer" to="remaining" method="_on_short_timer_timeout"]
 [connection signal="pressed" from="openMenu" to="openMenu" method="_on_pressed"]

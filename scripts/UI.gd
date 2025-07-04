@@ -18,4 +18,3 @@ func _process(_delta: float) -> void:
 	if $traps/VBoxContainer/EGG.button_pressed:
 		global.money -= 200
 		$"../../Jose".resetToBorder()
-	
