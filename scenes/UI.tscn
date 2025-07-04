@@ -1,13 +1,14 @@
 [gd_scene load_steps=9 format=4 uid="uid://sbslr0lbyr0p"]
 
 [ext_resource type="FontFile" uid="uid://dsyfoq56seh4p" path="res://assets/fonts/Minecraftia-Regular.ttf" id="1_dj8aq"]
-[ext_resource type="Script" path="res://scripts/open_menu.gd" id="2_ro3t7"]
+[ext_resource type="Script" uid="uid://bsr3gfqctdhgk" path="res://scripts/open_menu.gd" id="2_ro3t7"]
 
 [sub_resource type="GDScript" id="GDScript_ro3t7"]
 script/source = "extends Control
 @onready var global = $\"..\"
 func _process(_delta: float) -> void:
 	$money.text = \"Money: \" +  str(global.money)
+	
 "
 
 [sub_resource type="Image" id="Image_ro3t7"]
@@ -365,7 +366,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_dj8aq")
 text = "↓ TRAPS ↓"
 script = ExtResource("2_ro3t7")
 
-[node name="traps" type="Node" parent="."]
+[node name="traps" type="Node2D" parent="."]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="traps"]
 offset_left = 895.0
